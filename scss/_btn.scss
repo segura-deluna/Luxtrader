@@ -1,0 +1,64 @@
+.btn {
+	display: inline-block;
+	position: relative;
+
+	&::before,
+	&::after {
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		content: "";
+		left: 0;
+	}
+
+	&::before {
+		top: 0;
+		background-color: $yellow;
+	}
+
+	&::after {
+		bottom: 0;
+		background-color: $brown-dark;
+	}
+
+	&__body {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		min-height: 50px;
+
+		&::after,
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			width: 3px;
+			height: 100%;
+			background-image: linear-gradient(to top, $brown-dark, $yellow);
+		}
+
+		&::before {
+			left: 0;
+		}
+
+		&::after {
+			right: 0;
+		}
+
+		span {
+			display: block;
+			padding: 0px 50px;
+			font-family: $font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			position: relative;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+
+}

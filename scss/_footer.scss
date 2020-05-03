@@ -1,0 +1,18 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+
+	& h2 {
+		display: block;
+		width: 100%;
+		font-family: $font;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		line-height: 1;
+		color: $dark;
+		margin: 0 auto;
+	}
+}

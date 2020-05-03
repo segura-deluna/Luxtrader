@@ -83,7 +83,7 @@
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
-		z-index: 5;
+		z-index: 10;
 
 		span {
 			top: 49%;
@@ -109,7 +109,7 @@
 .menu-body {
 
 	@media (max-width: 650px) {
-		background-color: rgba(29, 37, 43, 0.8);
+		background-color: rgba(29, 37, 43, 0.9);
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -119,6 +119,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity .3s ease-in;
+		z-index: 7;
 
 		&.active {
 			opacity: 1;

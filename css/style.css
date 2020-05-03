@@ -80,6 +80,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  font-family: 'PFDin', sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -94,7 +95,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -106,6 +107,7 @@ select {
 }
 
 .container {
+  position: relative;
   max-width: 970px;
   padding: 0 10px;
   margin: 0 auto;
@@ -229,7 +231,7 @@ select {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
   }
   .menu-burger span {
     top: 49%;
@@ -237,7 +239,7 @@ select {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #d5c29e;
+    background-color: #c3a673;
   }
   .menu-burger span:first-child {
     top: 0;
@@ -250,7 +252,7 @@ select {
 
 @media (max-width: 650px) {
   .menu-body {
-    background-color: rgba(29, 37, 43, 0.8);
+    background-color: rgba(29, 37, 43, 0.9);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -262,6 +264,7 @@ select {
     -webkit-transition: opacity .3s ease-in;
     -o-transition: opacity .3s ease-in;
     transition: opacity .3s ease-in;
+    z-index: 7;
   }
   .menu-body.active {
     opacity: 1;
@@ -314,7 +317,7 @@ select {
 }
 
 .menu-body__link:hover, .header__actions-region:hover {
-  color: #d5c29e;
+  color: #c3a673;
 }
 
 @media (max-width: 650px) {
@@ -354,7 +357,7 @@ select {
 }
 
 .action-header__link:hover {
-  color: #d5c29e;
+  color: #c3a673;
 }
 
 .action-link1 {
@@ -371,5 +374,261 @@ select {
 
 .action-link4 {
   background: url("../img/hammer-menu.png") left center no-repeat;
+}
+
+.main-slider {
+  position: relative;
+}
+
+.main-slider__body {
+  padding: 30px 0px 100px 0px;
+  position: relative;
+}
+
+.main-slider__item {
+  color: #ffffff;
+}
+
+.main-slider__content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.main-slider__text {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.main-slider__btn {
+  margin-top: 55px;
+  color: #ffffff;
+}
+
+.main-slider__control {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20;
+}
+
+.main-slider__control:after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  width: 70%;
+  height: 70%;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.control-slider__arrow {
+  position: relative;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.control-slider__arrow-prev {
+  background-image: url(../img/prev.png);
+  width: 14px;
+  height: 24px;
+}
+
+.control-slider__decor {
+  position: relative;
+  z-index: 50;
+  margin: 0 12px;
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+
+.control-slider__arrow-next {
+  background-image: url(../img/next.png);
+  width: 14px;
+  height: 24px;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.slider-body-1 {
+  background-image: url("../img/slider_bg_1.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider-body-2 {
+  background-image: url("../img/slider_bg_2.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.swiper-container {
+  overflow-x: hidden;
+  height: 450px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title__item {
+  font-family: 'Ceremonious';
+  font-size: 2.6em;
+  color: #bb9c66;
+  margin-bottom: 15px;
+}
+
+.title__main {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.title__main--w {
+  color: #ffffff;
+}
+
+.title__main--b {
+  color: #1c242a;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  content: "";
+  left: 0;
+}
+
+.btn::before {
+  top: 0;
+  background-color: #c3a673;
+}
+
+.btn::after {
+  bottom: 0;
+  background-color: #906731;
+}
+
+.btn__body {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-height: 50px;
+}
+
+.btn__body::after, .btn__body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#906731), to(#c3a673));
+  background-image: -webkit-linear-gradient(bottom, #906731, #c3a673);
+  background-image: -o-linear-gradient(bottom, #906731, #c3a673);
+  background-image: linear-gradient(to top, #906731, #c3a673);
+}
+
+.btn__body::before {
+  left: 0;
+}
+
+.btn__body::after {
+  right: 0;
+}
+
+.btn__body span {
+  display: block;
+  padding: 0px 50px;
+  font-family: "PTSans";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.btn__body span:hover {
+  color: #c3a673;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer h2 {
+  display: block;
+  width: 100%;
+  font-family: "PTSans";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #1c242a;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
