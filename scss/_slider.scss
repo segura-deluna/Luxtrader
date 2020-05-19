@@ -1,5 +1,6 @@
 .main-slider {
 	position: relative;
+	margin-bottom: 70px;
 
 	&__body {
 		padding: 30px 0px 100px 0px;
@@ -36,12 +37,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 20;
+		z-index: 6;
 
 		&:after {
 			content: "";
 			position: absolute;
-			z-index: 20;
+			z-index: 6;
 			width: 70%;
 			height: 70%;
 			background-color: #ffffff;
@@ -52,12 +53,10 @@
 	}
 }
 
-
 .control-slider {
-
 	&__arrow {
 		position: relative;
-		z-index: 50;
+		z-index: 7;
 		cursor: pointer;
 	}
 
@@ -69,7 +68,7 @@
 
 	&__decor {
 		position: relative;
-		z-index: 50;
+		z-index: 7;
 		margin: 0 12px;
 		animation: rotation 5s infinite linear;
 	}
@@ -82,30 +81,28 @@
 }
 
 @keyframes rotation {
-	0% {}
+	0% {
+	}
 
 	100% {
 		transform: rotate(360deg);
 	}
 }
 
-
-
 .slider-body-1 {
-	background-image: url('../img/slider_bg_1.jpg');
+	background-image: url("../img/slider_bg_1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .slider-body-2 {
-	background-image: url('../img/slider_bg_2.jpg');
+	background-image: url("../img/slider_bg_2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-
-.swiper-container {
-	height: 450px;
-}
+// .swiper-container {
+// 	height: 450px;
+// }

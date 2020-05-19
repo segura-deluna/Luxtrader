@@ -7,6 +7,7 @@ userIcon.addEventListener('click', (e) => {
 	const userMenu = document.querySelector('.action-header__menu');
 	userMenu.classList.toggle('active');
 });
+
 // Burger-menu
 burger.addEventListener('click', (e) => {
 	burger.classList.toggle('active');

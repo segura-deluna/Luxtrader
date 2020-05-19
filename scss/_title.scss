@@ -2,7 +2,7 @@
 	text-align: center;
 
 	&__item {
-		font-family: 'Ceremonious';
+		font-family: "Ceremonious";
 		font-size: 2.6em;
 		color: $brown;
 		margin-bottom: 15px;
@@ -20,6 +20,7 @@
 		}
 
 		&--b {
+			font-weight: 500;
 			color: $dark;
 		}
 	}

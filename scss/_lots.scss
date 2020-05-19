@@ -1,0 +1,70 @@
+.lots {
+	&__container {
+	}
+	&__header {
+		margin-bottom: 40px;
+		.title {
+			margin-bottom: 15px;
+		}
+	}
+	&__slider {
+	}
+}
+
+.slider-lots {
+	&__body {
+	}
+
+	&__slide {
+	}
+
+	&__control {
+	}
+}
+
+.control-lots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__arrow {
+		width: 100%;
+		max-width: 100px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		fill: $brown;
+		// stroke: $brown;
+		stroke-width: 1px;
+		// fill-rule: evenodd;
+		&:after {
+			display: flex;
+			content: "";
+			width: 15px;
+			height: 15px;
+			margin: 0 5px;
+			border-radius: 50%;
+			border: 1px solid $brown;
+		}
+		&:last-child {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__link {
+		background-image: url(./../img/lots/circle-link.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		max-width: 100px;
+		width: 100%;
+		// max-height: 100px;
+		margin: 0 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.3em;
+		font-weight: 500;
+		color: $dark;
+		text-transform: uppercase;
+	}
+}

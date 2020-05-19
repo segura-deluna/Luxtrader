@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="38.38" viewBox="0 0 112 38.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #bb9c66;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="arrow-next.svg" class="cls-1" d="M1181.62,1408.03l0.7-.71L1200,1425l-0.71.71Zm17.67,16.26L1200,1425l-17.68,17.68-0.7-.71Zm-24.67-16.26,0.7-.71L1193,1425l-0.71.71Zm17.67,16.26L1193,1425l-17.68,17.68-0.7-.71ZM1091,1425v-1h108v1H1091Z" transform="translate(-1089.5 -1405.81)"/>
+</svg>

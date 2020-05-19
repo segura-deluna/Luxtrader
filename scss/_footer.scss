@@ -1,13 +1,15 @@
 .footer {
-	position: absolute;
+	position: relative;
+	padding-top: 60px;
 	bottom: 0;
 	height: auto;
+	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
 
 	& h2 {
 		display: block;
-		width: 100%;
+		width: 70%;
 		font-family: $font;
 		font-size: 1.5em;
 		text-transform: uppercase;
