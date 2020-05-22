@@ -655,6 +655,12 @@ select {
   margin: 0 -50px;
 }
 
+@media (max-width: 1050px) {
+  .slider-lots {
+    margin: 0 -10px;
+  }
+}
+
 .slider-lots .swiper-slide {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
@@ -663,8 +669,17 @@ select {
 }
 
 .slider-lots__body {
-  padding: 0 50px;
   margin-bottom: 50px;
+}
+
+.slider-lots__slide {
+  padding: 0 50px;
+}
+
+@media (max-width: 1050px) {
+  .slider-lots__slide {
+    padding: 0 15px;
+  }
 }
 
 .lot {
@@ -680,6 +695,7 @@ select {
   max-width: 245px;
   height: 520px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .lot__header {
@@ -845,6 +861,7 @@ select {
   font-family: "BravoRGR", sans-serif;
   font-size: 40px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .lot__btn {

@@ -45,4 +45,18 @@ const lotSlider = new Swiper('.lots__slider', {
 		nextEl: '.control-lots__arrow-next',
 		prevEl: '.control-lots__arrow-prev',
 	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		620: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		830: {
+			slidesPerView: 3,
+		}
+	},
 });
