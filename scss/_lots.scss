@@ -1,6 +1,8 @@
 .lots {
+	margin-bottom: 100px;
 	&__header {
 		margin-bottom: 40px;
+
 		.title {
 			margin-bottom: 15px;
 		}
@@ -9,17 +11,22 @@
 
 .slider-lots {
 	margin: 0 -50px;
+
 	@media (max-width: 1050px) {
 		margin: 0 -10px;
 	}
+
 	.swiper-slide {
 		align-items: stretch;
 	}
+
 	&__body {
 		margin-bottom: 50px;
 	}
+
 	&__slide {
 		padding: 0 50px;
+
 		@media (max-width: 1050px) {
 			padding: 0 15px;
 		}
@@ -35,6 +42,7 @@
 	height: 520px;
 	text-align: center;
 	margin: 0 auto;
+
 	&__header {
 		position: relative;
 		margin-bottom: 30px;
@@ -111,6 +119,7 @@
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto 5px;
+
 		&:after {
 			position: absolute;
 			content: "";
@@ -119,6 +128,7 @@
 			background-color: #000000;
 			transform: rotate(45deg);
 		}
+
 		img {
 			position: relative;
 			z-index: 2;
@@ -167,6 +177,7 @@
 .lot__btn {
 	max-width: 219px;
 	margin: 0 auto;
+
 	.btn__body {
 		span {
 			font-family: "PFDin", sans-serif;
@@ -185,6 +196,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	&__arrow {
 		width: 100%;
 		max-width: 100px;
@@ -204,6 +216,7 @@
 			border-radius: 50%;
 			border: 1px solid $brown;
 		}
+
 		&:last-child {
 			flex-direction: row-reverse;
 		}

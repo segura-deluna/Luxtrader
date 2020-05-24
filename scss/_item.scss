@@ -1,0 +1,63 @@
+.item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	padding: 30px 30px 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in;
+
+	&:hover {
+		box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+
+		.item__title {
+			color: $yellow;
+		}
+	}
+
+	&__icon {
+		position: relative;
+		max-width: 75px;
+		z-index: 2;
+		margin: 0 auto 25px;
+	}
+
+	&__title {
+		position: relative;
+		z-index: 2;
+		font-size: 21px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #ffffff;
+		transition: color 0.3s ease-in;
+	}
+
+	&__decor {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+}

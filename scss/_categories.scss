@@ -1,0 +1,17 @@
+.categories {
+	&__row {
+		display: flex;
+		margin: 0 -50px;
+	}
+
+	&__col {
+		flex: 0 1 33.33%;
+		padding: 0 50px;
+		margin-bottom: 50px;
+	}
+
+	&__deco {
+		span {
+		}
+	}
+}

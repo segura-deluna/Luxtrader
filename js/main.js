@@ -46,7 +46,7 @@ const lotSlider = new Swiper('.lots__slider', {
 		prevEl: '.control-lots__arrow-prev',
 	},
 	breakpoints: {
-		320: {
+		319: {
 			slidesPerView: 1,
 		},
 		620: {
