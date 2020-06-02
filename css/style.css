@@ -1048,21 +1048,180 @@ select {
   color: #c3a673;
 }
 
+.categories .container {
+  overflow: hidden;
+  position: relative;
+}
+
+.categories .container::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+}
+
 .categories__row {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 0 -50px;
+  padding-top: 35px;
+}
+
+.categories__row::before, .categories__row::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  width: 17.28px;
+  height: 17.28px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 17.28px;
+      -ms-flex: 0 0 17.28px;
+          flex: 0 0 17.28px;
+  border: 1px solid #c3a673;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.categories__row::before {
+  left: 32.6%;
+}
+
+.categories__row::after {
+  left: 65.8%;
 }
 
 .categories__col {
+  position: relative;
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 33.33%;
       -ms-flex: 0 1 33.33%;
           flex: 0 1 33.33%;
-  padding: 0 50px;
-  margin-bottom: 50px;
+  padding: 0 50px 25px;
+  margin-bottom: 25px;
+}
+
+.categories__col::before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  bottom: -5px;
+  content: "";
+  background-color: #c3a673;
+  width: 10px;
+  height: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10px;
+      -ms-flex: 0 0 10px;
+          flex: 0 0 10px;
+  border-radius: 50%;
+}
+
+.categories__deco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: calc(100% + 24px);
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+.categories__deco::before {
+  content: "";
+  background-color: #c3a673;
+  width: 1px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.categories__deco::after {
+  content: "";
+  width: 17.28px;
+  height: 17.28px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 17.28px;
+      -ms-flex: 0 0 17.28px;
+          flex: 0 0 17.28px;
+  border: 1px solid #c3a673;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 15px 0;
+}
+
+.categories__deco span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.categories__deco span::before {
+  content: "";
+  background-color: #c3a673;
+  width: 10px;
+  height: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10px;
+      -ms-flex: 0 0 10px;
+          flex: 0 0 10px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.categories__deco span::after {
+  content: "";
+  background-color: #c3a673;
+  width: 1px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .item {
@@ -1110,7 +1269,7 @@ select {
   position: relative;
   max-width: 75px;
   z-index: 2;
-  margin: 0 auto 25px;
+  margin: 0 auto 20px;
 }
 
 .item__title {
@@ -1118,7 +1277,7 @@ select {
   z-index: 2;
   font-size: 21px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
