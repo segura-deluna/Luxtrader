@@ -13,7 +13,11 @@
 	transition: box-shadow 0.3s ease-in;
 
 	&:hover {
-		box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.1);
+
+		.item__bg {
+			transform: scale(1.1);
+		}
 
 		.item__title {
 			color: $yellow;
@@ -50,6 +54,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+		transition: transform 0.5s ease;
 		&:after {
 			position: absolute;
 			content: "";

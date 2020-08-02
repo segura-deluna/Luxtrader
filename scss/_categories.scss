@@ -1,7 +1,9 @@
 .categories {
-	.container {
+	margin-bottom: 80px;
+	&__wrap {
 		overflow: hidden;
 		position: relative;
+		margin-bottom: 85px;
 
 		&::after {
 			position: absolute;
@@ -12,12 +14,12 @@
 			background-color: #fff;
 		}
 	}
+
 	&__row {
 		position: relative;
 		display: flex;
-		justify-content: center;
 		flex-wrap: wrap;
-		margin: 0 -50px;
+		margin: 0 -50px 0;
 		padding-top: 35px;
 
 		&::before,
@@ -33,15 +35,29 @@
 		}
 		&::before {
 			left: 32.6%;
+
+			@media (max-width: 975px) {
+				left: 49%;
+			}
+
+			@media (max-width: 650px) {
+				left: 48%;
+			}
 		}
 
 		&::after {
 			left: 65.8%;
+
+			@media (max-width: 975px) {
+				display: none;
+			}
 		}
 	}
 
 	&__col {
 		position: relative;
+		display: flex;
+		justify-content: center;
 		flex: 0 1 33.33%;
 		padding: 0 50px 25px;
 		margin-bottom: 25px;
@@ -57,6 +73,14 @@
 			height: 10px;
 			flex: 0 0 10px;
 			border-radius: 50%;
+		}
+
+		@media (max-width: 975px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 650px) {
+			flex: 1 1 100%;
 		}
 	}
 
@@ -110,6 +134,32 @@
 				background-color: $yellow;
 				width: 1px;
 				flex: 1 1 auto;
+			}
+		}
+	}
+
+	&__text {
+		&-wrap {
+			position: relative;
+			background: url("../img/categories/pattern.png") left top repeat-y;
+			color: #333333;
+			font-size: 16px;
+			line-height: calc(25 / 15);
+			padding: 14px 0px 30px 130px;
+			& p {
+				margin-bottom: 30px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				background: url("../img/categories/pattern-head.png") 0 0 no-repeat;
+				top: -5px;
+				left: 0;
+				width: 85px;
+				height: 6px;
 			}
 		}
 	}
