@@ -60,3 +60,22 @@ const lotSlider = new Swiper('.lots__slider', {
 		}
 	},
 });
+
+
+const quotesSlider = new Swiper('.quotes__slider', {
+	// Optional parameters
+	loop: true,
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	speed: 1000,
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.control-slider-quotes__circle',
+	}
+});
