@@ -1568,6 +1568,12 @@ select {
   margin-bottom: 0;
 }
 
+@media (max-width: 650px) {
+  .slider-quotes__body {
+    margin-top: 40px;
+  }
+}
+
 .slider-quotes__slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1582,6 +1588,12 @@ select {
 
 .slider-quotes__slide.swiper-slide-active {
   opacity: 1 !important;
+}
+
+@media (max-width: 650px) {
+  .slider-quotes__slide {
+    display: block;
+  }
 }
 
 .slider-quotes__img {
@@ -1602,6 +1614,10 @@ select {
       -ms-flex: 0 0 33.68421%;
           flex: 0 0 33.68421%;
   padding: 0 50px;
+}
+
+.slider-quotes__img img {
+  max-width: 300px;
 }
 
 .slider-quotes__content {
@@ -1706,11 +1722,219 @@ select {
   cursor: pointer;
 }
 
-.info__title {
+.info {
+  padding-bottom: 75px;
+}
+
+.info__row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -22px;
+}
+
+@media (max-width: 992px) {
+  .info__row {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .info__row {
+    display: block;
+  }
+}
+
+.info__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 22px;
+  margin-bottom: 50px;
+}
+
+.info__column:last-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .info__column {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info__column {
+    padding: 0 10px;
+  }
+}
+
+.info__item {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .info__item {
+    margin-bottom: 20px;
+  }
+}
+
+.info__data {
+  font-size: 12px;
+  color: #c3a673;
+}
+
+.info__label {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #1c242a;
+  margin-bottom: 5px;
+}
+
+.info__text {
+  font-size: 15px;
+  line-height: calc(21 / 15);
+}
+
+.title-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.title-info span:nth-child(2) {
+  font-family: "PFDin";
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .title-info {
+    margin-bottom: 15px;
+  }
+}
+
+.subscribe__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -22px;
+}
+
+@media (max-width: 767px) {
+  .subscribe__body {
+    display: block;
+    margin: 0;
+  }
+}
+
+.subscribe__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 22px;
+}
+
+@media (max-width: 480px) {
+  .subscribe__column {
+    padding: 0 10px;
+  }
+}
+
+.subscribe__text {
+  font-size: 15px;
+  line-height: calc(21 / 15);
+}
+
+@media (max-width: 767px) {
+  .subscribe__text {
+    margin-bottom: 20px;
+  }
+}
+
+.form-subscribe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  border: 3px solid #c3a673;
+  background-color: #ffffff;
+}
+
+.form-subscribe__input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.form-subscribe__input input {
+  font-size: 15px;
+  color: #1c242a;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  background-color: #ffffff;
+  border: 0;
+  outline: none;
+}
+
+.form-subscribe__btn {
+  position: relative;
+  background-color: #ffffff;
+  border: 0;
+  outline: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 95px;
+      -ms-flex: 0 0 95px;
+          flex: 0 0 95px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form-subscribe__btn:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 32px;
+  background-color: #c3a673;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-subscribe__btn span {
+  background: url(../img/info/arrow-btn.png) right no-repeat;
+  padding-right: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1c242a;
 }
 
 .footer {

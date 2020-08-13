@@ -68,10 +68,18 @@ const quotesSlider = new Swiper('.quotes__slider', {
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
-	speed: 1000,
+	speed: 700,
 	effect: 'fade',
 	fadeEffect: {
 		crossFade: true
+	},
+	breakpoints: {
+		320: {
+			autoHeight: true,
+		},
+		650: {
+			autoHeight: false,
+		}
 	},
 
 	// Navigation arrows
