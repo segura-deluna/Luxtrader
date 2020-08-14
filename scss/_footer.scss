@@ -1,20 +1,118 @@
 .footer {
-	position: relative;
-	padding-top: 60px;
-	bottom: 0;
-	height: auto;
-	text-align: center;
-	left: 50%;
-	transform: translateX(-50%);
+	background-color: $dark;
+	padding: 45px 0;
+	@media (max-width: 731px) {
+		padding: 45px 0 25px;
+	}
 
-	& h2 {
-		display: block;
-		width: 70%;
-		font-family: $font;
-		font-size: 1.5em;
+	&__content {
+		display: flex;
+		@media (max-width: 731px) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__column {
+		&-full {
+			flex: 1 1 auto;
+		}
+
+		&:first-child {
+			flex: 0 0 180px;
+		}
+
+		&:last-child {
+			text-align: right;
+			@media (max-width: 731px) {
+				text-align: center;
+			}
+		}
+		@media (max-width: 731px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		font-size: 14px;
+		color: $yellow;
+	}
+
+	&__menu {
+		padding: 0 30px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		& li {
+			margin: 5px 15px 0 0;
+		}
+		@media (max-width: 731px) {
+			justify-content: center;
+		}
+	}
+
+	&__link {
+		font-family: "PFDin", sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		color: #ffffff;
 		text-transform: uppercase;
-		line-height: 1;
-		color: $dark;
-		margin: 0 auto;
+		letter-spacing: 1.4px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		@media (max-width: 731px) {
+			align-items: center;
+		}
+	}
+
+	&__phone {
+		display: flex;
+		justify-content: start;
+		white-space: nowrap;
+		max-height: 60px;
+		color: $brown;
+		font-family: "BravoRGR";
+		font-size: 50px;
+		text-transform: uppercase;
+		margin-top: -10px;
+		@media (max-width: 731px) {
+			font-size: 40px;
+		}
+		& small {
+			font-size: 25px;
+			margin: 8px 2px 0 0;
+		}
+	}
+
+	&__callback {
+		color: $brown;
+		// margin-top: 10px;
+		& span {
+			position: relative;
+			border-bottom: 1px dashed $brown;
+			&:before {
+				position: absolute;
+				content: "";
+				width: 8px;
+				height: 10px;
+				top: 0;
+				left: -10px;
+				background: url(../img/arrow-callback.png) center no-repeat;
+			}
+		}
 	}
 }
