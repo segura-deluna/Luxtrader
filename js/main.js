@@ -1,3 +1,11 @@
+// Smooth-scroll page
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1500,
+	speedAsDuration: true
+});
+
+
+
 const userIcon = document.querySelector('.user-header__icon'),
 	burger = document.querySelector('.menu-burger'),
 	menuBody = document.querySelector('.menu-body');
@@ -10,6 +18,10 @@ userIcon.addEventListener('click', (e) => {
 
 // Burger-menu
 burger.addEventListener('click', (e) => {
+	burger.classList.toggle('active');
+	menuBody.classList.toggle('active');
+});
+menuBody.addEventListener('click', (e) => {
 	burger.classList.toggle('active');
 	menuBody.classList.toggle('active');
 });

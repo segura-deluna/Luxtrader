@@ -1,5 +1,10 @@
 .header {
 	background-color: $dark;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 15;
 
 	&__wrap {
 		position: relative;

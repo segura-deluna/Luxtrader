@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Luxtrader</title>
+	<link rel="icon" href="img/hammer-menu.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,15 +22,15 @@
 					<span></span>
 				</div>
 				<!-- ./menu-burger -->
-				<a href="#" class="header__logo"><img src="img/logo.png" alt=""></a>
+				<a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
 				<div class="header__menu">
 					<nav class="menu-body">
 						<ul class="menu-body__list">
-							<li><a href="#" class="menu-body__link">Главная</a></li>
-							<li><a href="#" class="menu-body__link">Аукцион</a></li>
-							<li><a href="#" class="menu-body__link">О проекте</a></li>
-							<li><a href="#" class="menu-body__link">Партнерам</a></li>
-							<li><a href="#" class="menu-body__link">Контакты</a></li>
+							<li><a data-scroll href="#page" class="menu-body__link">Главная</a></li>
+							<li><a data-scroll href="#lots" class="menu-body__link">Аукцион</a></li>
+							<li><a data-scroll href="#categories" class="menu-body__link">О проекте</a></li>
+							<li><a data-scroll href="#services" class="menu-body__link">Партнерам</a></li>
+							<li><a data-scroll href="#info" class="menu-body__link">Контакты</a></li>
 						</ul>
 						<!-- ./menu-body__list -->
 					</nav>
@@ -57,7 +59,7 @@
 	</header>
 	<!-- ./header -->
 
-	<main class="page">
+	<main class="page" id="page">
 		<div class="main-slider ">
 
 			<div class="main-slider__container swiper-container">
@@ -137,7 +139,7 @@
 		<!-- /.main-slider -->
 
 
-		<div class="lots">
+		<div class="lots" id="lots">
 			<div class="lots__container container">
 				<div class="lots__header">
 					<div class="title">
@@ -336,7 +338,7 @@
 		<!-- /.lots -->
 
 
-		<div class="categories">
+		<div class="categories" id="categories">
 			<div class="container">
 				<div class="categories__wrap">
 					<div class="categories__row">
@@ -578,7 +580,7 @@
 		<!-- /.categories -->
 
 
-		<div class="services">
+		<div class="services" id="services">
 			<div class="container">
 				<div class="services__header">
 					<div class="lots__header">
@@ -837,7 +839,7 @@
 								</div>
 								<!-- /.subscribe__column -->
 
-								<div class="subscribe__column">
+								<div class="subscribe__column" id="info">
 									<form action="#" class="subscribe__form form-subscribe">
 										<div class="form-subscribe__input">
 											<input type="text" placeholder="Ваш e-mail" name="email" required>
@@ -904,6 +906,7 @@
 
 
 	<script src="js/swiper.min.js"></script>
+	<script src="js/smooth-scroll.polyfills.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
